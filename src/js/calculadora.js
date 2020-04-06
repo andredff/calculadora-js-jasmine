@@ -10,7 +10,11 @@ const Calculadora = {
   },
 
   subtrair: (n1, n2) => {
-    return 0;
+    if(isNaN(n1) || isNaN(n2)) {
+      return 0;
+    }
+    
+    return n1 - n2;
   },
 
   dividir: (n1, n2) => {
